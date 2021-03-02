@@ -1,5 +1,5 @@
-# Testé avec Python 3.6.8 (dernière version sur le repo CentOS au 08/01/2021)
-# Ce programme nécessite une connexion au réseau jolsio.net pour y être executé sans modification
+# Testé avec Python 3.6.8
+# Nécessite L'installation des libraries cx_Oracle & python-ldap
 
 # Import des modules
 import ldap
@@ -17,7 +17,7 @@ pattern=open(NomPattern,'r', encoding='utf-8')
 # Connection à la base de donnée à l'AD
 connect = ldap.initialize('ldap://172.15.11.210')
 connect.set_option(ldap.OPT_REFERRALS, 0)
-connect.simple_bind_s('btssio', 'P@ssw0rd21')
+connect.simple_bind_s('user', 'password')
 
 # Connection à la base de donnée Oracle
 connection = cx_Oracle.connect('JTANGUY', 'JTANGUY', cx_Oracle.makedsn('172.15.11.102', 1521, 'orcl'))
