@@ -30,6 +30,7 @@ python3 gererUsersOracle.py [Fichier Pattern]
 
 exemple : `python3 gererUsersOracle.py pattern.txt`
 
+
 Par défaut le script trouve dans l'AD le nom complet des utilisateurs et les transforme en nom abrégé par exemple :
 
 Jean-Baptiste LE FLOC’H --> JBLEFLOCH
