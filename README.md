@@ -51,3 +51,12 @@ connect = ldap.initialize('ldap://adresse du serveur')
 connect.set_option(ldap.OPT_REFERRALS, 0)
 connect.simple_bind_s('Identifiant', 'Mot de passe')
 ```
+
+### Modifier l'emplacement des utilisateurs dans l'AD
+
+* Se rendre ligne n°28
+* Remplacer tous les paramètres entre cotes (' ') par les votres :
+
+```
+result = connect.search_s('OU=Utilisateurs,OU=Toulouse,OU=Finances,DC=stesio,DC=jol', ldap.SCOPE_SUBTREE, "displayName=*")
+```
