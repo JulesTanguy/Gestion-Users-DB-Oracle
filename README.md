@@ -28,7 +28,7 @@ pip3 install python-ldap
 
 python3 gererUsersOracle.py [Fichier Pattern]
 
-exemple : `python3 genererScriptCreateV5.py pattern.txt`
+exemple : `python3 gererUsersOracle.py pattern.txt`
 
 ## Modifiation du script
 
