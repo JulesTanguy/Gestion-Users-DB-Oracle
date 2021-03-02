@@ -62,7 +62,7 @@ for ligne in Noms:
             p = (pTemp[0])[0]+(pTemp[1])[0]
     
     pnom = (p.upper()+nom.upper()).replace("'", "").replace("-", "")
-    NomUserOracle = "GR2_"+pnom
+    NomUserOracle = pnom
     
     # Tant qu'il y a encore des lignes dans le fichier pattern
     i=0
